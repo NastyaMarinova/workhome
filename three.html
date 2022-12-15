@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Project</title>
+</head>
+<body>
+<style>
+    form {
+        margin: 50px auto;
+        width: 80vw;
+    }
+</style>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>General Info</legend>
+
+            <p>
+                <label>
+                    <input name="username" type="text" value="New User" autocomplete="off" required>    
+                </label>
+            </p>
+            
+            <p>
+                <label>
+                    <input name="email" type="email" placeholder="mail@examle.com" disabled>
+                </label>
+            </p>
+
+            <p>
+                <label for="birthdate">
+                    Pleae type your birth date
+                </label>
+                <input id="birthdate" name="birthdate" type="date" minlength="5" maxlength="15" placeholder="Your date">
+            </p>
+
+            <p>
+                <label for="tel">
+                    Phone number:
+                    <input type="tel" placeholder="(+373) 0000000">
+                </label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>
+                <label>
+                    Has Pets?
+                    <input type="checkbox" name="hasPets">
+                </label>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;
+    
+                <label>
+                    Has Kids?
+                    <input type="checkbox" name="hasKids">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Number of apartments:
+                    <input type="number" name="apartments" min="5" max="500" step="5" value="10">
+                </label>
+            </p>
+
+            <p>
+                <div>Current Studies:?</div>
+                
+                <ul>
+                    <li>
+                        <input type="radio" name="studies" value="school">
+                        <label>School</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="studies" value="highschool" checked>
+                        <label>Highschool</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="studies" value="college">
+                        <label>College</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="studies" value="university">
+                        <label>University</label>
+                    </li>
+                </ul>
+                
+
+              <p>
+                  <textarea name="desc" rows="3" cols="40" placeholder="Write down something about you..."></textarea>
+              </p>
+            </p>
+        </fieldset>
+        
+        &nbsp;
+
+        <fieldset>
+            <p>
+                <label>
+                    Password:
+                    <input type="password" name="password">
+                </label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit" title="Register">Send</button>
+            &nbsp;&nbsp;
+            <button type="reset" title="Clear">Reset</button>
+        </p>
+        
+    </form>
+
+</body>
+</html>
